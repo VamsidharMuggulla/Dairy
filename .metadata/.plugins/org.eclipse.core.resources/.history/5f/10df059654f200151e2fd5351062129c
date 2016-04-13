@@ -1,0 +1,42 @@
+package com.dairy;
+
+import android.app.Activity;
+import android.content.Context;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Spinner;
+
+public class PSignUp extends Activity {
+
+	
+	EditText ETaddress;
+	EditText ETlocation;
+	//EditText ETpin;
+	EditText ETldd;
+	Spinner	 SpinnerGroup;
+	Spinner SpinnerDist;
+	
+	
+
+	String address;
+	String location;
+	//String	pin;
+	String ldd;
+	String group;
+	String uname;
+	String dist;	
+	Context context;
+	//Alerts alerts;
+	Button register1;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_psign_up);
+	}
+
+	
+}

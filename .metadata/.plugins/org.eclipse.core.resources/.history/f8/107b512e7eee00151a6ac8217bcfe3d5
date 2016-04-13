@@ -1,0 +1,47 @@
+package com.dairy;
+
+import java.util.ArrayList;
+
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+
+public class Givework extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_givework);
+		
+		EditText et=(EditText)findViewById(R.id.work);
+		String workk=et.getText().toString();
+		
+		
+		
+		ArrayList<NameValuePair> al=new ArrayList<NameValuePair>();
+		al.add(new BasicNameValuePair("work",workk));
+		Log.e("Work : ",workk); 
+
+		
+		Button b1=(Button)findViewById(R.id.assign);
+		b1.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				
+				
+			}
+		});
+		
+	}
+}

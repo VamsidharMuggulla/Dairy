@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dairy</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_activity_givework">Givework</string>
+    <string name="title_activity_give_holiday">GiveHoliday</string>
+    <string name="title_activity_get_work">GetWork</string>
+    <string name="title_activity_get_holidays">GetHolidays</string>
+    <string name="title_activity_user_home">UserHome</string>
+    <string name="title_activity_submitted">Submitted</string>
+
+</resources>

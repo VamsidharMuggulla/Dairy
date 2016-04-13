@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo1"
+    tools:context="com.uidsample4.SplashScreen" >
+
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+
+    
+    
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:indeterminate="true"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:layout_gravity="bottom" 
+android:indeterminateBehavior="repeat"                
+                android:paddingBottom="50dp"
+                />
+
+    <!--
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    -->
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Testing Network..."
+                android:layout_gravity="center|bottom"
+                android:paddingBottom="70dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:nextFocusDown="@+id/progressBar1" />
+
+            
+
+</FrameLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UI5Registration</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Country">Select State</string>
+    <string name="Department">Select Department</string>
+
+    <string-array name="spinner1">
+        <item>Andhra Pradesh</item>
+        <item>Telangana</item>
+    </string-array>
+    <string-array name="spinner2">
+        <item>--select--</item>
+        <item>CSE</item>
+        <item>ECE</item>
+        <item>EEE</item>
+        <item>MECH</item>
+    </string-array>
+
+    <string name="title_activity_register_college_code">RegisterCollegeCode</string>
+    <string name="title_activity_college_registration_review">CollegeRegistrationReview</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_registered">Registered</string>
+    <string name="title_activity_user_registration_review">UserRegistrationReview</string>
+    <string name="title_activity_user_register_review">UserRegisterReview</string>
+
+</resources>

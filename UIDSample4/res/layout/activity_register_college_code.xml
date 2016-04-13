@@ -1,0 +1,363 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   
+    android:background="@drawable/background"
+   
+    android:orientation="vertical" 
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/ShadowText"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_weight="0.58"
+            android:gravity="center"
+            android:text="    Asistencia"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="35dp" />
+
+        <ImageButton
+            android:id="@+id/IBHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:gravity="left"
+            
+            android:src="@drawable/ic_home" />
+    </LinearLayout>
+   
+       <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="312dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="#123132"
+            android:paddingTop="5dp" 
+            >
+
+            <TextView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_gravity="center"
+                android:text="User Registration"
+                style="@style/ShadowText" 
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text" />
+
+          <TextView
+                android:id="@+id/TVCollegeCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="College Code:"
+                style="@style/ShadowText" 
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text" />
+            <EditText
+                android:id="@+id/ETCollegeCode"
+                
+                style="@style/SignInEditText"                
+                android:imeOptions="actionNext"
+                android:maxLength="2" 
+                android:inputType="textCapCharacters"/>
+
+          <TextView
+                android:id="@+id/TVBranch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Branch"
+                style="@style/ShadowText" 
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text" />
+
+		<Spinner
+        			android:id="@+id/SpinnerBranch"
+			    	       
+			        android:entries="@array/spinner2"
+			        android:prompt="@string/Department"
+			        android:background="@drawable/spinnergradient"
+					android:layout_width="match_parent"
+					android:layout_height="50dp" 
+					
+					android:spinnerMode="dialog"
+					
+					android:clickable="true"
+					 				 
+					/>
+
+
+            <TextView
+                android:id="@+id/TVUserId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="User ID"
+                style="@style/ShadowText" 
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text" />
+			<EditText
+                android:id="@+id/ETUID"
+                style="@style/SignInEditText"
+               android:imeOptions="actionNext"
+                
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                                              
+                />
+			          <TextView
+                android:id="@+id/TVFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="First Name"
+                style="@style/ShadowText" 
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text" />
+						<EditText
+                android:id="@+id/ETFname"
+                style="@style/SignInEditText"
+               android:imeOptions="actionNext"
+                android:inputType="textCapWords"         
+                />
+			<TextView
+                android:id="@+id/TVLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Last Name"
+                style="@style/ShadowText" 
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text" />
+								<EditText
+                android:id="@+id/ETLName"
+                style="@style/SignInEditText"
+               android:imeOptions="actionNext"
+                  
+                android:inputType="textCapWords"              
+                />
+<TextView
+                android:id="@+id/TVPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Password"
+                style="@style/ShadowText" 
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text" />	
+                							            <EditText
+								                android:id="@+id/ETPassword"
+								                style="@style/SignInEditText"
+								             
+								                android:layout_width="match_parent"
+								                android:layout_height="wrap_content"
+								                android:ems="10"
+								                android:inputType="textPassword" >
+
+								              
+								            </EditText>
+								         <TextView
+                android:id="@+id/TVRePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Retype Password"
+                style="@style/ShadowText" 
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text" /> 
+								            <EditText
+								                android:id="@+id/ETRetypePassword"
+								                style="@style/SignInEditText"
+								             
+								                android:layout_width="match_parent"
+								                android:layout_height="wrap_content"
+								                android:ems="10"
+								                android:inputType="textPassword" >
+
+								         
+								            </EditText>
+								            
+								<TextView
+                android:id="@+id/TVPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Phone"
+                
+                style="@style/ShadowText" 
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text" />         
+					<EditText
+                android:id="@+id/ETPhone"
+                style="@style/SignInEditText"
+               android:imeOptions="actionNext"
+                android:maxLength="10" 
+                android:inputType="phone"               
+                />
+					
+					           <TextView
+                android:id="@+id/TVEMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="EMail"
+                style="@style/ShadowText" 
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text" />
+								<EditText
+                android:id="@+id/ETEmail"
+                style="@style/SignInEditText"
+               android:imeOptions="actionGo"
+                
+               android:inputType="textEmailAddress"                
+                />
+            <Button
+                android:id="@+id/Register"                
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                
+                android:background="@drawable/button_background_states"
+                android:gravity="center"                
+                android:padding="10dp"
+                android:text="Register" 
+                android:textColor="#ffffff"
+                style="@style/ShadowText"                
+                 />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall" 
+                android:textColor="#8B3E2F"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:textColor="#8B3E2F"
+                android:layout_height="wrap_content"
+                android:text="A Smart Way To Take Attendance"
+                
+                
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="78dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+<TextView
+                    android:id="@+id/textView4"
+                    style="@style/ShadowText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="Register\nCollege"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+<ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/forward" />                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Register\nUser"
+                    android:textColor="#ff0000"
+                    android:gravity="center"
+                    style="@style/ShadowText"
+                    android:background="@android:color/transparent"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+              <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/forward" />
+              <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:text="Sign\nIn"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    style="@style/ShadowText"
+                    android:background="@android:color/transparent"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingTop="10dp"
+                android:layout_gravity="center"
+              
+                android:gravity="center"
+                android:layout_height="wrap_content" 
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/BAllRightsReserved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All Rights Reserved."
+                    android:textColor="#8B3E2F"
+                    android:background="@android:color/transparent"
+android:textAppearance="?android:attr/textAppearanceSmall"                    />
+
+                <Button
+                    android:id="@+id/BAbout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About."
+                    android:textColor="#159753"
+                    android:background="@android:color/transparent"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    />
+				<Button
+                    android:id="@+id/BHelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Help!"
+                    android:textColor="#486237"
+                    android:background="@android:color/transparent"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    />
+                
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+               </LinearLayout>
